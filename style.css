@@ -1,0 +1,125 @@
+:root {
+    --main-color: #292330;
+    --second-color: #17171B;
+    --third-color: #ABACB1;
+    --fourth-color: #E1E1E1;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--fourth-color);
+}
+
+.hdcontainer {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 10px #888;
+    flex-wrap: wrap;
+}
+
+.hdcontent {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    font-size: 1.15rem;
+    padding: 1rem;
+    align-items: center;
+}
+.shcontainer {
+    background-color: var(--second-color);
+    flex-wrap: wrap;
+    block-size: 14rem;
+    box-shadow: 3px 3px 10px var(--main-color);
+}   
+.shcontent {
+    display: flex;
+    color: whitesmoke;
+    flex-wrap: wrap;    
+    block-size: 14rem;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hratendimentotxt {
+    font-size: 1.5rem;
+    font-weight: 700;    
+}
+.hratendimento {
+    font-size: 3rem;
+    font-weight: 700;   
+}
+.restanttime {
+    font-size: 1.2rem;
+}
+.endheadercontainer {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 10px var(--main-color);
+    block-size: 3.2rem;
+}
+.endheadercontent {
+    font-size: 2.2rem;
+    color: whitesmoke;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center;
+    block-size: 3.2rem;
+}
+.middlecontainer {
+    background-color: var(--third-color);
+    box-shadow: 3px 3px 10px var(--third-color);
+}
+.middlecontent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 0.3rem 1rem 0.3rem 1rem;
+}
+.numberpng {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.numberfila {
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-right: 0.6rem;
+}
+.flux {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.icon {
+    padding: 3px 0 0 0 ;
+}
+.bt1container, .bt2container, .bt3container, .bt4container {
+    border-bottom: 1px ridge var(--third-color);
+    block-size: 4rem;
+}
+.bt1content, .bt2content, .bt3content, .bt4content {
+    block-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+
+}
+@media (max-width: 382px) {
+    .hratendimentotxt {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 364px) {
+    .restanttime {
+        font-size: 1rem;
+        }
+}
